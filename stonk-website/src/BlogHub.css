@@ -1,0 +1,16 @@
+.CardImages{
+    width:400px;
+    height:400px;
+    object-fit: cover;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    filter: opacity(.6);
+}
+.CardColumn{
+    margin-bottom: 5vh;
+}
+.CardTitle{
+    padding-top: 50%;
+    font-size: xx-large;
+}

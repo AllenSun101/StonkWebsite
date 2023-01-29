@@ -1,0 +1,59 @@
+.Footer{
+    background-color: rgb(28, 28, 28);
+    padding: 5vh;
+    color: white;
+    font-family: Montserrat;
+    padding-top: 7vh;
+}
+.Background{
+    text-align: left;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h5{
+    font-weight: bold;
+    padding-right: 3vw;
+}
+a{
+    color:lightgray;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding-left: 0%;
+    margin-top: 2vh;
+}
+.Footer p{
+    color: lightgray;
+    margin-top: 2vh;
+}
+.input{
+    font-size: large;
+}
+.Icon{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10%;
+}
+.Display{
+    display:block;
+    height:50px;
+    width:50px;
+    margin-right: 20px;
+}
+.button{
+    background-color: lightgray;
+    margin-bottom: 2vh;
+}
+.Newsletter{
+    margin-left: auto;
+}
+@media only screen and (max-width:992px){
+    .Newsletter{
+        margin-left: 0;
+    }
+}

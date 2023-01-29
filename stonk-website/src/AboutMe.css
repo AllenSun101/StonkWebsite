@@ -1,0 +1,79 @@
+.Body{
+    margin-top: 5vh;
+    text-align: left;
+    font-size: large;
+    padding-bottom: 5vh;
+}
+.Headshot{
+    text-align: center;
+}
+.Name{
+    text-align: center;
+    margin-bottom: 1vh;
+}
+.TimelineTitle{
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+.Timeline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Timeline > ul{
+    list-style: none;
+}
+.Timeline > ul > li{
+    padding: 5vh;
+    border-radius: 2%;
+    margin-bottom: 5vh;
+    background-color: lavender;
+}
+.Timeline > ul > li:last-child{
+    margin-bottom: 0vh;
+}
+@media only screen and (min-width:768px){
+    .Timeline > ul::before{
+        content:'';
+        position: absolute;
+        width: 4px;
+        height:100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: lavender;
+    }
+    .Timeline > ul > li{
+        width: 50%;
+        position: relative;
+    }
+    .Timeline > ul > li:nth-child(odd){
+        float: left;
+        clear:right;
+        transform: translateX(-30px);
+    }
+    .Timeline > ul > li:nth-child(even){
+        float: right;
+        clear:left;
+        transform: translateX(30px);
+    }
+    .Timeline > ul > li::before{
+        content:'';
+        position: absolute;
+        height:20px;
+        width:20px;
+        background-color: purple;
+        border-radius: 50%;
+    }
+    .Timeline > ul > li:nth-child(odd)::before{
+        transform: translate(50%, -50%);
+        right:-30px;
+        top:0%;
+    }
+    .Timeline > ul > li:nth-child(even)::before{
+        transform: translate(-50%, -50%);
+        left:-30px;
+        top:0%;
+    }
+}

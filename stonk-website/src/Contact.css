@@ -1,0 +1,30 @@
+.Title{
+    text-align: center;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+.FormDescription{
+    font-size: large;
+    text-align: left;
+    margin-right: 5vw;
+}
+.button{
+    background-color: lightgray;
+    color: #000;
+    border-color: lightgrey;
+}
+.btn-primary:hover{
+    background-color: lavender;
+    border-color: lightgray;
+}
+.FormContent{
+    padding-bottom: 3vh;
+    vertical-align: middle;
+    display:flex;
+    align-items: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.FormDescription > p{
+    margin-bottom: 10vh;
+}
