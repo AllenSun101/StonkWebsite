@@ -13,13 +13,24 @@ import ProjectsResources from "./ProjectsResources";
 import TradingReports from "./TradingReports";
 import Footer from "./Footer"
 import BlogHub from "./BlogHub"
+import React from 'react'
 
 
 function App() { 
+
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() =>{
+    fetch("/api")
+    .then((res) => res.json())
+    .then((data) => setData(data.message()))
+  }, []);
+
   return (
     <div>
       <div className='Body'>
         <SiteNavbar />
+        <p>{!data ? "Loading..." : data}</p>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/Home" element={<Home/>}/>
