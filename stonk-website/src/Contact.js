@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col';
 import './Contact.css';
 import FormGroup from 'react-bootstrap/esm/FormGroup';
 
-
 function Contact(){
     const [contactForm, setContactForm] = React.useState({firstName: "", lastName: "", email: "", message: ""})
     const [hasSubmitted, setHasSubmitted] = React.useState("No")

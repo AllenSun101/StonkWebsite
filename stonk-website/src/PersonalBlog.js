@@ -8,6 +8,8 @@ function PersonalBlog(){
             <Container>
                 <Row>
                     <h1>Blog</h1>
+                    <Col>
+                    </Col>
                 </Row>
             </Container>
             <p>Link to database and retrieve blogs, display and hide certain ones</p>
