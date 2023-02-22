@@ -29,8 +29,8 @@ function Contact(){
             setHasSubmitted("No")
         }
         return(
-            // Send the email to my inbox, confirmation that form has been sent
-            <p>Need to collapse form/add thank you message</p>
+            // API CALL TO EMAIL RESPONSE THROUGH SERVER
+            <p></p>
         )
     }
 
@@ -90,6 +90,8 @@ function Contact(){
             )
         }
     }
+
+    
  
     return(
             <Container>

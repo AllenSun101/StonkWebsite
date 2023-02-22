@@ -4,9 +4,10 @@
 }
 .Hero{
     width: 100vw;
-    height: 70vh;
+    height: 85vh;
     object-fit: cover;
-    margin-top: -5vh;
+    margin-top: -7vh;
+    position: relative;
 }
 .Body{
     background-color: whitesmoke;

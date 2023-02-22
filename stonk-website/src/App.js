@@ -13,24 +13,26 @@ import ProjectsResources from "./ProjectsResources";
 import TradingReports from "./TradingReports";
 import Footer from "./Footer"
 import BlogHub from "./BlogHub"
+import RecordsHub from './RecordsHub';
 import React from 'react'
 
 
 function App() { 
 
   const [data, setData] = React.useState(null);
+  const [page, setPage] = React.useState("/Home");
 
   React.useEffect(() =>{
-    fetch("/api")
+    fetch("/database")
     .then((res) => res.json())
-    .then((data) => setData(data.message()))
+    .then((data) => setData(data.message))
   }, []);
+
 
   return (
     <div>
       <div className='Body'>
-        <SiteNavbar />
-        <p>{!data ? "Loading..." : data}</p>
+        <SiteNavbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/Home" element={<Home/>}/>
@@ -43,7 +45,9 @@ function App() {
           <Route path="/ProjectsResources" element={<ProjectsResources/>}/> 
           <Route path="/TradingReports" element={<TradingReports/>}/> 
           <Route path="/BlogHub" element={<BlogHub/>}/> 
+          <Route path="/RecordsHub" element={<RecordsHub/>}/> 
         </Routes>
+        <p>{!data ? "Loading..." : data}</p>
       </div>
       <Footer className="Footer"/>
     </div>

@@ -28,7 +28,7 @@ function Home(){
                 <Row>
                     <div className='Description mb-2'>
                         <ul>
-                            <li>To beat the Dow, NASDAQ, and S&P500 each year</li>
+                            <li>To beat the Dow, NASDAQ, and S&P 500 each year</li>
                             <li>To improve trading strategies and returns</li>
                             <li>To Continue learning and growing through experience</li>
                         </ul>

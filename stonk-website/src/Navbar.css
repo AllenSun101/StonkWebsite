@@ -1,0 +1,36 @@
+.Navbar{
+    font-size: large;
+    background-color: transparent;
+    margin-top: -5vh;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 2;
+}
+.Navbar2{
+    font-size: large;
+    background: hsla(318, 100%, 96%, 1);
+    background: linear-gradient(360deg, hsla(318, 100%, 96%, 1) 0%, hsla(0, 87%, 91%, 1) 100%);
+    background: -moz-linear-gradient(360deg, hsla(318, 100%, 96%, 1) 0%, hsla(0, 87%, 91%, 1) 100%);
+    background: -webkit-linear-gradient(360deg, hsla(318, 100%, 96%, 1) 0%, hsla(0, 87%, 91%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFEBF9", endColorstr="#FCD4D4", GradientType=1 );
+    margin-top: -5vh;
+    margin-bottom: 0;
+    position: relative;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    z-index: 2;
+}
+.Nav{
+    color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.NavContainer{
+    text-align: right;
+}
+#blog-dropdown, #Trading-Records-Dropdown{
+    color: white;
+}
+.NavDropdown{
+    font-size: 50 px;
+}
