@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+.PostBody{
+    margin-left: 25%;
+    margin-right: 25%;
+    white-space: pre-line;
+}

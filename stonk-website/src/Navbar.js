@@ -11,7 +11,7 @@ function SiteNavbar(){
     const location = useLocation();
     const page = location.pathname;
 
-    if(page === "/Home" || page === "/AboutMe"){
+    if(page === "/Home" || page === "/AboutMe" || page === "/"){
       alternateNavbar = true;
     }
     else{
@@ -32,8 +32,8 @@ function SiteNavbar(){
                 <NavDropdown.Item href="/TradingReports">Trading Reports</NavDropdown.Item>
                 <NavDropdown.Item href="/PersonalBlog">Personal Blog</NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Trading Records" id="Trading-Records-Dropdown" className="NavDropdown" menuVariant='dark'>
-                <NavDropdown.Item href="/Records">Historical Returns</NavDropdown.Item>
+              <NavDropdown title="Trading Resources" id="Trading-Records-Dropdown" className="NavDropdown" menuVariant='dark'>
+                <NavDropdown.Item href="/Records">Performance History</NavDropdown.Item>
                 <NavDropdown.Item href="/ProjectsResources">Projects</NavDropdown.Item>
                 <NavDropdown.Item href="/MiscellaneousResources">Other Resources</NavDropdown.Item>
               </NavDropdown>

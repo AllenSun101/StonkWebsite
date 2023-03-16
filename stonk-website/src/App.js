@@ -15,19 +15,10 @@ import Footer from "./Footer"
 import BlogHub from "./BlogHub"
 import RecordsHub from './RecordsHub';
 import React from 'react'
+import BlogPage from "./BlogPage";
 
 
 function App() { 
-
-  const [data, setData] = React.useState(null);
-  const [page, setPage] = React.useState("/Home");
-
-  React.useEffect(() =>{
-    fetch("/database")
-    .then((res) => res.json())
-    .then((data) => setData(data.message))
-  }, []);
-
 
   return (
     <div>
@@ -46,8 +37,8 @@ function App() {
           <Route path="/TradingReports" element={<TradingReports/>}/> 
           <Route path="/BlogHub" element={<BlogHub/>}/> 
           <Route path="/RecordsHub" element={<RecordsHub/>}/> 
+          <Route path="/PersonalBlog/:blogPostID" element={<BlogPage/>}/>
         </Routes>
-        <p>{!data ? "Loading..." : data}</p>
       </div>
       <Footer className="Footer"/>
     </div>

@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Headshot from "./images/Headshot.png"
+import Headshot from "./images/Headshot2.png"
 import './AboutMe.css'
 import Hero from './images/Hero.jpeg'
 
@@ -257,7 +257,7 @@ const AboutMe = () => {
                         </li>
                         <li>
                             <div className='TimelineContent'>
-                                <h1>February 2023???</h1>
+                                <h1>March/April 2023???</h1>
                                 <p>I hopefully will be able to launch the second website of  
                                     <i> Dark Horse of Wall Street</i>! 
                                 </p>

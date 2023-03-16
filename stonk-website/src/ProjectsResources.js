@@ -1,7 +1,13 @@
 
 function ProjectsResources(){
     return(
-        <h1>Hello</h1>
+        <div>
+            <ul>
+                <li>Sector-Categorical Directional Indicator</li>
+                <li>Trading Screener & UI </li>
+                <li>Custom Technical Indicators & Customizable Dashboard</li>
+            </ul>
+        </div>
     )
 }
 export default ProjectsResources;

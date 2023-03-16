@@ -10,7 +10,7 @@
     position: relative;
 }
 .Body{
-    background-color: whitesmoke;
+    background-color: white;
     font-family: Montserrat;
 }
 .Description{
@@ -30,5 +30,12 @@
     color: white;
     font-size: 8vh;
 }
-
+.CardImageHome{
+    width:500px;
+    height:500px;
+    object-fit: cover;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
 

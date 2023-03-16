@@ -1,0 +1,41 @@
+.SearchBar{
+    font-size: x-large;
+    border-radius: 0%;
+    margin-bottom: 2vh;
+}
+.search{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+@media only screen and (max-width:991px){
+    .search{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.labels{
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.external{
+    color:purple;
+}
+.PostsTag{
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.PostTitles{
+    color: darkgreen;
+    margin-bottom: 1vh;
+}
+.NameDate{
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+.PostWrap{
+    white-space: pre-line;
+}
+.PostGroup{
+    margin-right: 5%;
+}

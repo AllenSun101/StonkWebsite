@@ -29,7 +29,15 @@
     padding: 5vh;
     border-radius: 2%;
     margin-bottom: 5vh;
-    background-color: lavender;
+    background: hsla(318, 63%, 85%, 1);
+
+    background: linear-gradient(360deg, hsla(318, 63%, 85%, 1) 0%, hsla(297, 51%, 53%, 1) 100%);
+
+    background: -moz-linear-gradient(360deg, hsla(318, 63%, 85%, 1) 0%, hsla(297, 51%, 53%, 1) 100%);
+
+    background: -webkit-linear-gradient(360deg, hsla(318, 63%, 85%, 1) 0%, hsla(297, 51%, 53%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F1C1E3", endColorstr="#BE4BC4", GradientType=1 );
 }
 .Timeline > ul > li:last-child{
     margin-bottom: 0vh;

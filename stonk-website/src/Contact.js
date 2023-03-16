@@ -29,7 +29,7 @@ function Contact(){
             setHasSubmitted("No")
         }
         return(
-            // API CALL TO EMAIL RESPONSE THROUGH SERVER
+            // Send message to blog writer application for manual responses
             <p></p>
         )
     }

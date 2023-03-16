@@ -2,41 +2,49 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import PersonalBlogCover from './images/PersonalBlogCover.jpg'
-import DailyUpdates from './images/DailyUpdates.jpeg'
-import PremarketReports from './images/PremarketReportsCover.jpg'
+import Code from './images/Coding.jpg'
+import Library from './images/Library.jpeg'
+import Files from './images/Files.jpg'
 import './BlogHub.css'
+import {Link} from 'react-router-dom'
+
 
 function RecordsHub(){
     return(
         <Container>
             <div className='Title'>
-                    <h1>Records Hub</h1>
+                    <h1>Resources Hub</h1>
                 </div>
             <Row className='CardsRow'>
                 <Col className="CardColumn">
+                    <Link to={'/Records'}>
                     <Card className="CardImages text-black">
-                        <Card.Img src={PersonalBlogCover} alt="Record1" className="CardImages"/>
+                        <Card.Img src={Files} alt="Performance History" className="CardImages ImageBackground"/>
                         <Card.ImgOverlay>
-                            <Card.Title className="CardTitle">Record1</Card.Title>
+                            <Card.Title className="CardTitle">Performance History</Card.Title>
                         </Card.ImgOverlay>
                     </Card>
+                    </Link>
                 </Col>
                 <Col className="CardColumn">
+                    <Link to={'/ProjectsResources'}>
                     <Card className="CardImages text-black">
-                        <Card.Img src={DailyUpdates} alt="Daily Market Updates" className="CardImages"/>
+                        <Card.Img src={Code} alt="Personal Projects" className="CardImages ImageBackground"/>
                         <Card.ImgOverlay>
-                            <Card.Title className="CardTitle">Record2</Card.Title>
+                            <Card.Title className="CardTitle">Personal Projects</Card.Title>
                         </Card.ImgOverlay>
                     </Card>
+                    </Link>
                 </Col>
                 <Col className="CardColumn">
+                    <Link to={'/MiscellaneousResources'}>
                     <Card className="CardImages text-black">
-                        <Card.Img src={PremarketReports} alt="Personal Blog" className="CardImages"/>
+                        <Card.Img src={Library} alt="Trading Records" className="CardImages ImageBackground"/>
                         <Card.ImgOverlay>
-                            <Card.Title className="CardTitle">Record3</Card.Title>
+                            <Card.Title className="CardTitle">Trading Records</Card.Title>
                         </Card.ImgOverlay>
                     </Card>
+                    </Link>
                 </Col>
             </Row>
         </Container>

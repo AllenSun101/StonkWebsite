@@ -5,7 +5,9 @@
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    filter: opacity(.6);
+}
+.ImageBackground{
+    filter: opacity(0.3);
 }
 .CardColumn{
     margin-bottom: 5vh;
