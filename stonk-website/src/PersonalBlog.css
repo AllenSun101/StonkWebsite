@@ -25,7 +25,7 @@
     margin-bottom: 3vh;
 }
 .PostTitles{
-    color: darkgreen;
+    color: purple;
     margin-bottom: 1vh;
 }
 .NameDate{
@@ -38,4 +38,7 @@
 }
 .PostGroup{
     margin-right: 5%;
+}
+.Posts{
+    margin-bottom: 2vh;
 }

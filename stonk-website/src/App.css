@@ -14,7 +14,6 @@
     font-family: Montserrat;
 }
 .Description{
-    list-style-position: inside;
     text-align: center;
     margin-bottom: 5vh;
 }
@@ -38,4 +37,7 @@
     margin-right: auto;
     margin-left: auto;
 }
-
+.CarouselImage{
+    width: 60%;
+    height: 50vh;
+}

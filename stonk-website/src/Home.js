@@ -5,8 +5,10 @@ import Col from 'react-bootstrap/Col';
 import Hero from './images/Hero.jpeg';
 import Bull from './images/WSBull.jpg'
 import Chart from './images/Chart.jpg'
+// import Gradient from './images/gradient.png';
 import { Card } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+// import Carousel from 'react-bootstrap/Carousel';
 
 function Home(){
     return(
@@ -22,7 +24,7 @@ function Home(){
                 <Row className='Description mb-2'>
                     <p>I'm Allen, an eighteen-year-old stock market enthusiast. I love trading,
                         integrating programming with finance, and following up on the latest economic 
-                        developments! I share all of my thoughts on this blog to hold myself accountable.
+                        developments! I share all of my thoughts on this blog.
                         <br></br>Note: I am not a financial advisor.
                     </p>
                 </Row>
@@ -39,12 +41,22 @@ function Home(){
                     </div>    
                 </Row>
                 <Row className='Description'>
-                    <h2>My Five Point Plan for Success:</h2>
-                    <div className='Description mb-1'>
+                    <h2 className='mb-3'>My Five Point Plan for Success:</h2>
+                    {/*
+                        <Carousel>
+                        <Carousel.Item>
+                            <img className='CarouselImage'
+                                src={Gradient}
+                                alt="Gradient"
+                            />
+                        </Carousel.Item>
+                        </Carousel>
+                    */}
+                    <div className=' mb-1'>
                         <ul>
                             <li>1. Employ short-term Technical Analysis on a wide range of assets.</li>
                             <li>2. Leverage economic context to guide portfolio composition and trading style.</li>
-                            <li>3. Balance diversification and concentrataion in accordance with broader market trends.</li>
+                            <li>3. Balance diversification and concentration in accordance with broader market trends.</li>
                             <li>4. Utilize a Value over Replacement approach with portfolio selections.</li>
                             <li>5. Proritize long-term instinctive development and learning over profits.</li>
                         </ul>

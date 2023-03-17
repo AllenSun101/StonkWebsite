@@ -62,7 +62,7 @@ function PersonalBlog(){
                 {posts.map((post) => {
                     var formattedDate = FormatDate(post.Date);
                     return(
-                        <div key={post.idBlogPosts}>
+                        <div className='Posts' key={post.idBlogPosts}>
                             <h3 className='PostTitles'>{post.Title}</h3>
                             <h5 className='NameDate'>By: {post.Author}, {formattedDate}</h5>
                             <p>{post.BlogText.substring(0, 250) + "..."}</p>
@@ -117,7 +117,7 @@ function PersonalBlog(){
                         <Button className="button" size="lg" type="submit" onClick={LoadMorePosts}>Load More Posts</Button>
                     </Col>
                     <Col>
-                        <Row>
+                        <Row className='mb-3'>
                             <h2 className="labels">Archives</h2>
                             <ul>
                                 <li><a className="external" href='/March2023'> March 2023</a></li>

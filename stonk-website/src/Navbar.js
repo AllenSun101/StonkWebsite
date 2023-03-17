@@ -5,22 +5,34 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Navbar.css';
 import {useLocation} from 'react-router-dom';
+import Logo from './images/Logo.png';
 
 function SiteNavbar(){
     var alternateNavbar = false;
     const location = useLocation();
     const page = location.pathname;
 
+    //modify as needed
     if(page === "/Home" || page === "/AboutMe" || page === "/"){
-      alternateNavbar = true;
+      alternateNavbar = false;
     }
     else{
       alternateNavbar = false;
     }
 
     return(
+      
       <Navbar expand="lg" className={alternateNavbar ? "Navbar" : "Navbar2"}>
         <Container className='NavContainer'>
+          <Navbar.Brand href="/Home">
+            <img
+              src={Logo}
+              width="70"
+              height="70"
+              className="d-inline-block align-top"
+              alt="Dark Horse Logo"
+            />
+          </Navbar.Brand>
           <Navbar.Brand href="/Home">Dark Horse of Wall Street</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

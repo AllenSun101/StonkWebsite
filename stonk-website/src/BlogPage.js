@@ -33,13 +33,14 @@ function BlogPage(){
     return (
         <div className='PostBody'>
             <h1>{post.Title}</h1>
-            <p>By: {post.Author}</p>
-            <p>{formattedDate}</p>
+            <h6>By: {post.Author}</h6>
+            <h6 className='mb-4'>{formattedDate}</h6>
             <Container>
                 <Row>
                     <p>{post.BlogText}</p>
                 </Row>
             </Container>
+            <h6>Likes:</h6>
             <h6>Comments:</h6>
             <h6>Tags:</h6>
         </div>

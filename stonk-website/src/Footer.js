@@ -31,6 +31,9 @@ function Footer(){
                         <h5>Blog Pages</h5>
                         <ul>
                             <li>
+                                <a href="/BlogHub">Blogs Page</a>
+                            </li>
+                            <li>
                                 <a href="/DailyTradingUpdates">Daily Updates</a>
                             </li>
                             <li>
@@ -39,16 +42,22 @@ function Footer(){
                             <li>
                                 <a href="/PersonalBlog">Personal Blog</a>    
                             </li>
-                            <li>
-                                <a href="/Records">Trading Records</a> 
-                            </li>
                         </ul>
                     </Col>
                     <Col sm="auto">
-                        <h5>Records</h5>
+                        <h5>Resources</h5>
                         <ul>
                             <li>
-                                <a href="/Records">Trading Records</a>
+                                <a href="/RecordsHub">Resources Page</a>
+                            </li>
+                            <li>
+                                <a href="/Records">Performance History</a>
+                            </li>
+                            <li>
+                                <a href="/ProjectsResources">Individual Projects</a>
+                            </li>
+                            <li>
+                                <a href="/MiscellaneousResources">Trading Records</a>
                             </li>
                         </ul>
                     </Col>
